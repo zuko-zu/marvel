@@ -1,5 +1,5 @@
 import AppHeader from "../appHeader/AppHeader"
-import RandomChar from "../randomChar/RandomChar"
+import RandomChar from "../randomCharacter/RandomCharacter"
 import CharList from "../charList/CharList"
 import CharInfo from "../charInfo/CharInfo"
 
