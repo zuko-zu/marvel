@@ -1,6 +1,5 @@
 class MarvelService {
   _apiBase = "https://gateway.marvel.com:443/v1/public/"
-  // ЗДЕСЬ БУДЕТ ВАШ КЛЮЧ, ЭТОТ КЛЮЧ МОЖЕТ НЕ РАБОТАТЬ
   _apiKey = "apikey=0fac07bd97a4ff56c26aa334c038ee07"
 
   getResource = async (url) => {
@@ -37,6 +36,7 @@ class MarvelService {
       thumbnail: character.thumbnail.path + "." + character.thumbnail.extension,
       homepage: character.urls[0].url,
       wiki: character.urls[1].url,
+      comics: character.comics.items,
     }
   }
 }

@@ -1,6 +1,9 @@
-function charItem({ name, thumbnail, style }) {
+function charItem({ name, thumbnail, style, onCharacterSelected, id }) {
   return (
-    <li className='char__item'>
+    <li
+      className='char__item'
+      onClick={() => onCharacterSelected(id)}
+    >
       <img
         src={thumbnail}
         alt={name}
